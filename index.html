@@ -109,24 +109,26 @@ cd blog   #进入blog目录
 hexo init   #生成博客 初始化博客
 hexo s    #启动本地博客服务
 </code></pre>
-<p><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a>   #本地访问地址</p>
+<p>#<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a>   #本地访问地址</p>
 <pre><code>hexo n &quot;我的第一篇文章&quot;  #创建新的文章
 </code></pre>
 <h2 id="返回blog目录"><a href="#返回blog目录" class="headerlink" title="返回blog目录"></a>返回blog目录</h2><pre><code>hexo clean #清理
 hexo g #生成
 </code></pre>
-<p><strong>Github创建一个新的仓库 YourGithubName.github.io</strong></p>
+<p>##Github创建一个新的仓库 YourGithubName.github.io**</p>
 <pre><code>cnpm install --save hexo-deployer-git #在blog目录下安装git部署插件
 </code></pre>
 <h2 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置_config.yml"></a>配置_config.yml</h2><hr>
 <pre><code># Deployment
+
+## Docs: https://hexo.io/zh-cn/docs/one-command-deployment
+
+deploy:
+type: &#39;git&#39;
+repo: https://github个人令牌@github.com/Zclire/Zclire.github.io.git
+branch: main
 </code></pre>
-<h2 id="Docs-https-hexo-io-zh-cn-docs-one-command-deployment"><a href="#Docs-https-hexo-io-zh-cn-docs-one-command-deployment" class="headerlink" title="Docs: https://hexo.io/zh-cn/docs/one-command-deployment"></a>Docs: <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/one-command-deployment">https://hexo.io/zh-cn/docs/one-command-deployment</a></h2><blockquote>
-<p>deploy:<br>   type: git<br>   repo: <a target="_blank" rel="noopener" href="https://github.com/YourGithubName/YourGithubName.github.io.git">https://github.com/YourGithubName/YourGithubName.github.io.git</a><br>   branch: master</p>
-</blockquote>
-<pre><code>hexo d #部署到Github仓库里
-</code></pre>
-<p><a target="_blank" rel="noopener" href="https://yourgithubname.github.io/">https://YourGithubName.github.io/</a>  #访问这个地址可以查看博客</p>
+<p>##hexo d #部署到Github仓库里<br>#<a target="_blank" rel="noopener" href="https://yourgithubname.github.io/">https://YourGithubName.github.io/</a>  #访问这个地址可以查看博客</p>
 <pre><code>git clone &lt;https://github.com/litten/hexo-theme-yilia.git&gt; themes/yilia  #下载yilia主题到本地
 </code></pre>
 <h1 id="修改hexo根目录下的-config-yml-文件-：-theme-yilia"><a href="#修改hexo根目录下的-config-yml-文件-：-theme-yilia" class="headerlink" title="修改hexo根目录下的 _config.yml 文件 ： theme: yilia"></a>修改hexo根目录下的 _config.yml 文件 ： theme: yilia</h1><pre><code>hexo c #清理一下
@@ -137,7 +139,7 @@ hexo d #部署到远程Github仓库
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/07/16/%E6%88%91%E7%9A%84%E6%97%A5%E5%BF%97/" data-id="clkc2utl30001zktg6cg9h5n2" data-title="我的日志" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/07/16/%E6%88%91%E7%9A%84%E6%97%A5%E5%BF%97/" data-id="cloi0lerp0001g0tgd5rf63qd" data-title="我的日志" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -188,7 +190,7 @@ hexo d #部署到远程Github仓库
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/07/16/hello-world/" data-id="clkc2utki0000zktg45e3ejhl" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/07/16/hello-world/" data-id="cloi0leqr0000g0tgfrg5fryk" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
